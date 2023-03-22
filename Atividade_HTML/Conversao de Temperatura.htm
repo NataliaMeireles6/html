@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="witdh=device-width, initial-scale=1">
+    <title>
+    Conversão de Temperaturas
+    </title>
+    
+</head>
+<style>
+    
+</style>
+<body>
+<h1 style="color:blueviolet; background-color: beige; font-size: 150%;">Entrada de dados e Operações Matemáticas</h1>
+<form>
+<br>
+
+<script>
+
+function Converter(){
+    
+            let f = document.getElementById("Farenheit").value;
+            let c = document.getElementById("Celsius").value;
+            let k = document.getElementById("Kelvin").value; 
+            
+if (f != "") {
+            c =(f-32)/1.8;
+            document.getElementById("Celsius").value = c;
+            k = (f-32)/1.8+273;
+            document.getElementById("Kelvin").value = k;
+ }
+ 
+else if (c != "") {
+            f =(c*9/5)+ 32;
+            document.getElementById("Farenheit").value = f;
+            k = c*1+273;
+            document.getElementById("Kelvin").value = k;
+}   
+if(c==""&& f==""&& k=="")
+ {
+             alert("Preencha pelo menos um campo!");
+            document.getElementById("FormFarenheit").style.borderColor = "red";
+ }
+            f =(k-273.15) * 9/5 +32;
+            document.getElementById("FormFarenheit").value = f;
+            c = k-273.15;
+            document.getElementById("FormCelsius").value = c;
+ }
+
+
+function Limpar(){
+            document.getElementById("Farenheit").value = "";
+            document.getElementById("Celsius").value = "";
+            document.getElementById("Kelvin").value = "";
+}
+
+</script>
+
+<form>
+
+<fieldset>
+    <legend style="color:black; font-size: 150% ;">Conversão de Temperaturas</legend>  
+<label for="TempF" style="color:blueviolet; font-size: 140%;">Farenheit(°F)</label><br>
+<input style="color:blueviolet; background-color: beige; font-size: 150%;" type="number" id="Farenheit" name="FormFarenheit" placeholder="Farenheit"><br><br>
+
+<label for="TempC" style="color:blueviolet; font-size: 140%;">Celsius(°C)</label><br>
+<input style="color:blueviolet; background-color: beige; font-size: 150%;" type="number" id="Celsius" name="Celsius" placeholder="Celsius"><br><br>
+
+<label for="TempK" style="color:blueviolet; font-size: 140%;">Kelvin(°K)</label><br>
+<input style="color:blueviolet; background-color: beige; font-size: 150%;" type="number" id="Kelvin" name="Kelvin" placeholder="Kelvin"><br><br>
+</fieldset><br>
+
+<input style="color:blueviolet; background-color: beige; font-size: 150%;" type="button" id="btnConverter" onclick="Converter()" value="Converter">
+<input style="color:blueviolet; background-color: beige; font-size: 150%;" type="button" id="btnLimpar" onclick="Limpar()" value="Limpar">
+
+</form>
+</body>
+</html>

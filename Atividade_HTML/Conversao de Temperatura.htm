@@ -18,38 +18,40 @@
 
 <script>
 
-function Converter(){
+function Converter(){ 
     
-            let f = document.getElementById("Farenheit").value;
-            let c = document.getElementById("Celsius").value;
-            let k = document.getElementById("Kelvin").value; 
-            
+    let f = document.getElementById("Farenheit").value;
+    let c = document.getElementById("Celsius").value;
+    let k = document.getElementById("Kelvin").value;
+
 if (f != "") {
-            c =(f-32)/1.8;
-            document.getElementById("Celsius").value = c;
-            k = (f-32)/1.8+273;
-            document.getElementById("Kelvin").value = k;
+    c =(f-32)/1.8;
+    document.getElementById("Celsius").value = c;
+    k = (f-32)/1.8+273;
+    document.getElementById("Kelvin").value = k;
  }
- 
-else if (c != "") {
-            f =(c*9/5)+ 32;
-            document.getElementById("Farenheit").value = f;
-            k = c*1+273;
-            document.getElementById("Kelvin").value = k;
-}   
-if(c==""&& f==""&& k=="")
+    else if (c != "") {
+    f =(c*9/5)+ 32;
+    document.getElementById("Farenheit").value = f;
+    k = c*1+273;
+    document.getElementById("Kelvin").value = k;
+ }
+ if(c==""&& f==""&& k=="")
  {
-             alert("Preencha pelo menos um campo!");
-            document.getElementById("FormFarenheit").style.borderColor = "red";
+    alert("Preencha pelo menos um campo!");
+    document.getElementById("Kelvin").style.borderColor = "red";
+    document.getElementById("Farenheit").style.borderColor = "red";
+    document.getElementById("Celsius").style.borderColor = "red";
+}
+else if (k != "") {
+    f =(k-273.15) * 9/5 +32;
+    document.getElementById("Farenheit").value = f;
+    c = k-273.15;
+    document.getElementById("Celsius").value = c;
  }
-            f =(k-273.15) * 9/5 +32;
-            document.getElementById("FormFarenheit").value = f;
-            c = k-273.15;
-            document.getElementById("FormCelsius").value = c;
- }
+}
 
-
-function Limpar(){
+function Limpar(){  
             document.getElementById("Farenheit").value = "";
             document.getElementById("Celsius").value = "";
             document.getElementById("Kelvin").value = "";

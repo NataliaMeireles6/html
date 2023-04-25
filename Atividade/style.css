@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,900&display=swap');
+
+
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+font-family: "Poppins", sans-serif;
+}
+
+body{
+
+    overflow: hidden;
+}
+
+
+.background{
+
+background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+background-image: url(./img/logo5.jpg);
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 145vh;
+}
+
+header{
+
+display: flex;
+justify-content: space-around;
+max-width: 100%;
+align-items: center;
+text-align: center;
+padding-top: 1rem;
+}
+
+.cabeçalho-link{
+
+display: flex;
+gap: 5rem;
+font-weight: 300;
+cursor: pointer;
+}
+
+.cabeçalho-link a{
+
+color: #fff;
+font-size: 18px;
+}
+
+.cabeçalho-link a:hover{
+
+color:deeppink;
+transition: 0.3s all;
+}
+
+button {
+
+color: white;
+background: transparent;
+border: solid 1px white;
+padding: 5px;
+border-radius: 15px;
+font-size: 18px;
+width: 150%;
+cursor: pointer;
+}
+
+button:hover{
+background-color: deeppink;
+color: white;
+transition: 0.5s;
+}
+
+.container-text{
+
+padding: 150px 0 0 130px;
+height: auto;
+width: auto;
+}
+
+.text h3{
+
+color: white;
+font-size: 20px;
+}
+
+.tex h1{
+
+color: white;
+margin-top: 10px;
+}
+
+.text span{
+
+color: white;
+font-size: 80px;
+font-weight: 300;
+margin-top: 10px;
+}
+
+.text p{
+color:white;
+font-size: 25px;
+}
+
+.redes-sociais a{
+
+color: deeppink;
+padding: 10px;
+margin-top: 10px;
+}
+.redes-sociais{
+    font-size: 160%;
+}
+.btn{
+
+margin-top: 1%;
+color: white;
+background: transparent;
+border: solid 1px white;
+padding: 5px;
+border-radius: 15px;
+font-size: 12px;
+width: 7.5%;
+cursor: pointer;
+font-size: 18px;
+}
+
+.form-contato a{
+
+    color: #fff;
+    font-size: 18px; 
+}

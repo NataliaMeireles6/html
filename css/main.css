@@ -1,57 +1,75 @@
 body {
+
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    
     }
+    
     ul {
     padding: 0px!important;
+    
     }
+    
     .menu-principal {
     width: 100%;
     background-color:wheat;
     height: 65px;
+    
     }
+    
     main{
     margin: 0 auto;
     position: relative;
+    
     }
-    .logo{
+     .logo{
     float: left;
     padding: 0%;
     width: 70%;
+    
     }
+    
     .redes-sociais ul li {
     margin-left: 5px;
-    display: inline-block;
     float: left;
     list-style-type: none;
     }
+    
     .redes-sociais{
     width: 30%;
     height: 40%;
     float: left;
     }
+    
     .header-2{
     background:white;
     width: 100%;
     margin left: 0 auto;
     padding: 16px;
     }
+    
     .menu-urls{
     height: 80px;
     border-bottom: 3px solid #efefef;
-    }
+}
+    
     .menu ul li{
     display: inline-block;
     color:black;
     margin-left: 15px;
     height: 50px;
+    
     }
     .menu ul li a:hover{
+    
     color:wheat;
     }
+    
     .menu ul li a:hover{
+    
     border-bottom: 2px solid wheat;
+    
     }
     .menu ul li a{
     display: inline-block;
@@ -60,17 +78,20 @@ body {
     font-size: 18px;
     text-transform: uppercase;
     }
+    
     .menu{
+    
     width: 70%;
     float: left;
-     }
+}
     .busca{
     text-align: center;
     width: 30%;
     float: right;
+    
     }
     .busca input{
-    background-position: 70;
+    background-position: 70%;
     background-repeat:no-repeat;
     margin-top: 10px;
     height: 30px;
@@ -78,7 +99,83 @@ body {
     width: 150px;
     border: 1px solid #d6d6d6;
     }
-    .slider.principal{
-        position: center;
-        margin-top: 10px;
-    }   
+     button.slick-prev{
+    font-size: 0%;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 6;
+    top: 100%;
+    left: 14%;
+    background-image: url('../img/anterior1.png.png');
+    }
+    
+    button.slick-next{
+    
+    font-size: 0%;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 6;
+    top: 100%;
+    right: 14%;
+    background-image: url('../img/anterior.png.png');
+    
+    }
+    
+    .slider-principal{
+    width: 100%!important;
+    display: block;
+    margin: auto;
+    margin-right: auto;
+    
+    }
+    
+    ul.slick-dots li.slick-active{
+     background-color: wheat;
+    
+    }
+    
+    .slick-lis{
+    width: 100%!important;
+    
+    }
+    
+    .slick-initialized{
+    
+    overflow: hidden;
+    
+    }
+    .slick-dots li button{
+    font-size: 0px;
+    border: 5px solid #ffffff;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: 50%;
+    Cursor: pointer;
+    }
+    
+    .slick-dots{
+    
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    Left: 50%;
+    top: 1540px
+    
+    }
+    
+    li.slick-active button{
+    
+    background: wheat;
+    }
+    
+    .slick-dots li{
+    padding: 10px;
+    display: inline-block;
+    }
